@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/大作业.css">
+    <style>
+    /*重置浏览器样式*/
+	* {
+    	padding: 0;
+    	margin: 0;
+	}
+	a {
+    	text-decoration: none;
+	}
+	ul {
+    	list-style-type: none;
+	}
+	/*清除浮动*/
+	.clear:after {
+    	content: '';
+    	display: block;
+    	height: 0;
+    	clear: both;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.header {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+	}
+	.top {
+    	width: 1200px;
+    	margin: 0 auto;
+	}
+	.header-info {
+    	float: right;
+	}
+	.header-info a {
+    	font-size: 15px;
+    	font-weight: 300;
+    	color: rgba(0, 0, 0, 1);
+	}
+	.container2 {
+    	height: 100px;
+	}
+	.logo {
+    	width: 400px;
+    	padding-top: 14px;
+    	float: left;
+	}
+	.nav {
+    	float: left;
+    	margin-top: 38px;
+	}
+	.nav li {
+    	float: left;
+    	width: 122px;
+    	text-align: center;
+    	border-right: 1px solid black;
+    	font-size: 16px;
+    	font-weight: bold;
+	}
+	.nav .last {
+    	border: none;
+	}
+	.nav a {
+    	color: rgba(0, 0, 0, 1);
+	}
+	.nav a:hover{
+		border-bottom: 2px solid red;
+	}
+	.form {
+    	float: right;
+    	margin-top: 30px;
+	}
+	.search {
+    	float: left;
+   		width: 150px;
+    	padding: 9px;
+    	border: 1px solid rgba(208, 61, 61, 1);
+	}
+	.submit {
+		margin-right: 100px;
+    	float: left;
+    	width: 36px;
+    	height: 36px;
+    	border: 1px solid rgb(208, 61, 61, 1);
+    	background: rgba(208, 61, 61, 1) url(../images/search.png) no-repeat center center;
+	}
+	.container3 {
+	    height: 450px;
+	    position: relative;
+	    margin-bottom: 50px;
+	}
+	.banner{
+	    width: 100%;
+	    height: 450px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	.container4{
+		height: 80px;
+		margin: 0 auto;
+		margin-left: 400px;
+		margin-bottom: 30px;
+	}
+	.title{
+		height: 60px;
+		width: 700px;
+		border: 1px solid red;
+		border-radius: 15px;
+		background-color: blue;
+		text-align: center;
+	}
+	.title a{
+		color: white;
+		font-size: 36px;
+		font-weight: bold;
+		padding-top: 60px;
+		text-decoration: none;
+	}
+	.container5{
+		width: 1200px;
+		margin: 20px auto;
+	}
+	.container5>div{
+		float: left;
+	}
+	.right{
+		width: 964px;
+	}
+	.right li{
+		list-style: none;
+		float: left;
+		margin-left: 12px;
+		margin-bottom: 12px;
+		border: 1px solid #000;
+		width: 227px;
+		height: 300px;
+		text-align: center;
+		position: relative;
+	}
+	.right img{
+		margin-top: 55px;
+	}
+	.p1{
+		margin-top: 35px;
+	}
+	.del{
+		text-decoration: line-through;
+	}
+	.hide{
+		width: 227px;
+		height: 76px;
+		line-height: 76px;
+		color: #fff;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		bottom: 0;
+		display: none;		
+	}
+	.right li:hover .hide{
+		display: block;
+	}
+	.container6{
+		height: 80px;
+		margin: 0 auto;
+		margin-left: 400px;
+		margin-top: 700px;
+	}
+	.container7 {
+	    height: 450px;
+	    position: relative;
+	    margin-bottom: 200px;
+	}
+	.container7 li{
+		list-style: none;
+	}
+	.banner2{
+	    width: 100%;
+	    height: 450px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	.banner3{
+	    width: 100%;
+	    height: 450px;
+	    position: absolute;
+	    margin-top: 450px;
+	    top: 0;
+	    left: 0;
+	}
+	.container9{
+		height: 150px;
+		position: relative;
+		margin-top: 50px;
+	}
+	.banner4{
+		width: 100%;
+	    height: 150px;
+	    position: absolute;
+	    margin-top: 200px;
+	    top: 0;
+	    left: 0;
+	}
+	.container10{
+		height: 200px;
+		margin: 0 auto;
+		border-top: 1px solid rgba(218, 218, 218, 1);
+		margin-top: 200px;
+	}
+	.l1{
+		list-style: none;
+		display: inline-block;
+		margin-left: 230px;
+		margin-top: 30px;
+	}
+	h2{
+		font-size: 20px;
+		color: gray;
+	}
+	.u2{
+		text-align: left;
+		display: block;
+	}
+	.u2 li{
+		list-style: none;
+		margin-top: 5px;
+	}
+	.l3{
+		font-size: 13px;
+		color: rgba(0, 0, 0, 1);
+	}
+	.container8{
+		width: 100%;
+		height: 120px;
+		background-color: #000;
+	}
+	.p2{
+		text-align: center;
+		color: #fff;
+		line-height: 120px; 
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container1">
+			<div class="header">
+            	<div class="top clear">
+                	<ul class="header-info clear">
+                    	<li><a href="#">登陆/注册</a></li>
+                	</ul>
+            	</div>
+        	</div>
+		</div>
+		<div class="container2">
+			<div class="header-bottom clear">
+				<img src="images/logo1.jpg" alt="logo图" class="logo" />
+                <ul class="nav clear">
+                    <li class="first"><a href="#">首页</a></li>
+                    <li><a href="#">电子产品</a></li>
+                    <li><a href="#">生活家居</a></li>
+                    <li><a href="#">图书</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li class="last"><a href="#">其他用品</a></li>
+                </ul>
+                <form class="form clear">
+                    <input type="text" placeholder="请输入你想要的产品" class="search" />
+                    <input type="button" class="submit" />
+                </form>
+			</div>
+		</div>
+		<div class="container3">
+			<ul>
+				<li><img src="images/banner.jpg" alt="banner图" class="banner"></li>
+			</ul>
+		</div>
+		<div class="container4">
+			<div class="title">
+				<a href="#">电子产品促销</a>
+			</div>
+		</div>
+		<div class="container5">
+		<div class="left">
+			<img src="images/mi.png" alt="jinghuaqi"/>
+		</div>
+		<div class="right">
+			<ul>
+				<li id="li1">
+					<img src="images/m1.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/m2.png" class="img">
+					<p class="p1">小米电视5</p>
+					<p>
+						<span>1099元</span>
+						<span class="del">1399元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/m3.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/mi4.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/m1.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/m2.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/m3.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+				<li>
+					<img src="images/mi4.png" class="img">
+					<p class="p1">小米电视3</p>
+					<p>
+						<span>999元</span>
+						<span class="del">1199元</span>
+					</p>
+					<div class="hide">
+						小米电视6折起
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container6">
+		<div class="title">
+			<a href="#">其他产品</a>
+		</div>
+	</div>
+	<div class="container7">
+		<ul>
+			<li>
+				<img src="images/banner2.jpg" alt="banner2" class="banner2">
+			</li>
+			<li>
+				<img src="images/banner3.jpg" alt="banner3" class="banner3">
+			</li>
+		</ul>
+	</div>
+	<div class="container9">
+		<img src="images/banner4.jpg" alt="banner4" class="banner4">
+	</div>
+	<div class="container10">
+		<ul class="u1">
+			<li class="l1">
+				<h2>购物指南</h2>
+				<ul class="u2">
+					<li class="l3"><a href="#">免费注册</a></li>
+					<li class="l3"><a href="#">开通支付宝</a></li>
+					<li class="l3"><a href="#">支付宝充值</a></li>
+				</ul>
+			</li>
+			<li class="l1">
+				<h2>天猫保障</h2>
+				<ul class="u2">
+					<li class="l3"><a href="#">发票保障</a></li>
+					<li class="l3"><a href="#">售后规则</a></li>
+					<li class="l3"><a href="#">缺货赔付</a></li>
+				</ul>
+			</li>
+			<li class="l1">
+				<h2>支付方式</h2>
+				<ul class="u2">
+					<li class="l3"><a href="#">快捷支付</a></li>
+					<li class="l3"><a href="#">信用卡</a></li>
+					<li class="l3"><a href="#">蚂蚁花呗</a></li>
+				</ul>
+			</li>
+			<li class="l1">
+				<h2>商家服务</h2>
+				<ul class="u2">
+					<li class="l3"><a href="#">商家入驻</a></li>
+					<li class="l3"><a href="#">商家中心</a></li>
+					<li class="l3"><a href="#">物流服务</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="container8">
+		<p class="p2">苏ICP备000号、2014-2017 版权所有</p>
+	</div>
+	</div>
+</body>
+</html>
